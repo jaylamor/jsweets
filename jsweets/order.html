@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+ <meta charset="utf-8">
+ <title>Order</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <style>
+@import url(jsweets.css);
+</style>
+</head>
+<body>
+<h1>Order Now</h1>
+<a href="index.html">Home</a>&emsp;
+<a href="treats.html">Treats</a>&emsp;
+<a href="locations.html">Locations</a>&emsp;
+<a href="order.html">Order</a>&emsp;
+<a href="reviews.html">Reviews</a>
+
+<form action="http://www.jsweets.com/order.php" method="post">
+
+<fieldset>
+<legend>Your Information</legend>
+<ul>
+  <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+  <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+  <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+  <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+  <li>Delivery instructions:<br>
+  <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+</ul>
+</fieldset>
+
+
+
+<fieldset>
+  <legend><em>Choose a Treat</em></legend>
+<ul>
+  <li><label><input type="checkbox" name="treat[]" value="red sauce" checked>Red Velvet Cupcakes</label></li>
+  <li><label><input type="checkbox" name="treat[]" value="white sauce">Strawberry Shortcake</label></li>
+  <li><label><input type="checkbox" name="treat[]" value="mozzarella">Banana Pudding</label></li>
+  <li><label><input type="checkbox" name="treat[]" value="pepperoni">Oreo Pudding</label></li>
+  <li><label><input type="checkbox" name="treat[]" value="mushrooms">Strawberry Filled Cupcakes</label></li>
+
+</ul>
+</fieldset>
+<fieldset>
+<legend>Number</legend>
+<p>How many of each:
+<select name="treats" size="1">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+</select>
+</p>
+</fieldset>
+
+</fieldset> <!-- closes 'Treats Specs' fieldset -->
+
+<p><input type="submit" value="Order my treats!">
+<input type="reset"></p>
+
+</form>
+</body> 
+</html>
